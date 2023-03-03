@@ -1,0 +1,229 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: "Gowun Batang", serif;
+  color: #202121;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  z-index: 99;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=main.d8a5f731.chunk.css.map */
+
+.w-44 {
+  width: 11rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.kakao-link-css {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+.kakao-link-btn {
+  border: 0px;
+  background: rgb(252, 228, 69);
+  border-radius: 5px;
+  font-family: Cafe24Oneprettynight;
+  font-weight: 800;
+  color: rgb(32, 33, 33);
+  padding: 10px 20px;
+}
