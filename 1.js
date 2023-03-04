@@ -16,28 +16,28 @@ $(function () {
     console.log(e.target);
   });
 
-  $(".closeSlide, .slide").on("click", function (e) {
-    $(".Slide-Conatainer").css("display", "none");
-    // $(".slick-track").not(".slick-initialized").slick();
-  });
+  // $(".modal-btn-simple>span, .galList-modal").on("click", function (e) {
+  //   $(".galList-modal").css("display", "none");
+  //   // $(".slick-track").not(".slick-initialized").slick();
+  // });
 
   $(".galList > div > ul > li").on("click", function (e) {
     var index = $(this).attr("slide-num");
 
     $(".Slide-Conatainer").css("display", "flex");
-    // $(".slick-track").not(".slick-initialized").slick(obj);
-    // $('.slider-for').slick('slickGoTo', slideNo);
+
     console.log($(this).attr("slide-num"));
     console.log($(this).children().children()[0].style.backgroundImage.slice(4, -1).replace(/"/g, ""));
     var url = $(this).children().children()[0].style.backgroundImage.slice(4, -1).replace(/"/g, "");
     $(".slick-active > img")[0].src = url;
   });
 
-  $(".gallery-more-button").on("click", function (e) {
+  $(".gallery-more-button > span").on("click", function (e) {
     if ($(".hiddenList").hasClass("active")) {
       $(".hiddenList").hide();
       $(".hiddenList").removeClass("active");
       $(".gallery-more-button >span").text("사진 더 보기");
+      $("body").animate({scrollTop: $(".section3").offset().top}, 0);
     } else {
       $(".hiddenList").show();
       $(".hiddenList").addClass("active");
