@@ -31,16 +31,16 @@ $(function () {
         description: thumbDesc,
         imageUrl: thumbImg,
         link: {
-          mobileWebUrl: "http://127.0.0.1:5500",
-          webUrl: "http://127.0.0.1:5500",
+          mobileWebUrl: "https://kongs510.github.io/wedding",
+          webUrl: "https://kongs510.github.io/wedding",
         },
       },
       buttons: [
         {
           title: "웹으로 보기",
           link: {
-            mobileWebUrl: "http://127.0.0.1:5500",
-            webUrl: "http://127.0.0.1:5500",
+            mobileWebUrl: "https://kongs510.github.io/wedding",
+            webUrl: "https://kongs510.github.io/wedding",
           },
         },
       ],
@@ -74,7 +74,7 @@ $(function () {
       autoplaySpeed: 2000,
 
       arrows: false,
-      slidesToShow: 4,
+      slidesToShow: 1,
       slidesToScroll: 1,
       prevArrow: "<button type='button' class='slick-prev'>Previous</button>", // 이전 화살표 모양 설정
       nextArrow: "<button type='button' class='slick-next'>Next</button>", // 다음 화살표 모양 설정
