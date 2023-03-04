@@ -582,3 +582,11 @@ em > span {
   padding: 4px 26px;
   border-radius: 32px;
 }
+.slick-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  min-height: 100%;
+  text-align: center;
+}
