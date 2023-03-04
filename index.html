@@ -88,30 +88,26 @@
   <body class="text-center">
     <div class="top-div">
       <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <h1
-          class="wow fadeIn cover-heading"
-          style="
-            text-align: right;
-            margin-top: 0.5em;
-            margin-right: 0.5em;
-            font-size: 2rem;
-            visibility: visible;
-            animation-name: fadeIn;
-          "
-        >
-          <span style="letter-spacing: -0.13em; margin-right: 0.1em;">⎽⎽</span><br />
-          04 <br />
-          月 <br />
-          29 <br />
-          日 <br />
-          <span style="letter-spacing: -0.13em; margin-right: 0.1em;">⎺⎺</span>
-        </h1>
+        <div class="header-container">
+          <div class="header-text">
+            <span class="ran r5">저</span><span class="ran r8">희</span>
+            <em><span class="ran r5">둘</span><span class="ran r5">,</span></em>
+          </div>
+          <div class="noti">
+            <img
+              class="pc"
+              src="https://wedding.dddproject.com/skin/tpl/wedding05_bride/images/w5Tit01.png"
+              alt="결혼합니다."
+            />
+            <p class="top-title">신랑 공민철 | 신부 김소라</p>
+            <p class="top-title-sub">2023.04.29</p>
+          </div>
+        </div>
       </header>
       <main role="main" class="inner">
         <div class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-          <p class="top-title">공민철 · 김소라</p>
-          <p class="top-title-sub">토요일 오후 03시 20분</p>
-          <p class="top-title-sub">웨딩 시그니쳐 4층 단독홀</p>
+          <p class="top-title-sub">2023년 04월 29일 토요일 오후 3시20분</p>
+          <p class="top-title-sub">웨딩 시그니쳐 4층 아너스홀</p>
           <br /><br /><br />
           <hr class="cover-container" />
           <br />
@@ -138,10 +134,86 @@
         </div>
         <div class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
           <div class="section1-title section1-sub2">
-            공현규 · 이화순<span class="small">의&nbsp;아들&nbsp;&nbsp;</span>공민철<br />
-            황인자<span class="small">의&nbsp;&nbsp;&nbsp;딸&nbsp;&nbsp;&nbsp;</span>김소라
+            공현규 · 이화순<span class="small">의&nbsp;장남&nbsp;&nbsp;</span>민철<br />
+            황인자<span class="small">의&nbsp;&nbsp;&nbsp;장녀&nbsp;&nbsp;&nbsp;</span>소라
           </div>
           <br /><br /><br /><br />
+        </div>
+        <div
+          class="wow fadeInUp section5 inner cover-container d-flex w-100 p-3 mx-auto flex-column"
+          style="visibility: visible; animation-name: fadeInUp;"
+        >
+          <br />
+          <p class="section5-title section5-main">Date</p>
+          <p class="section5-title section5-sub" style="margin-top: 0;">04월29일 · 토요일 · 오후 03:20</p>
+          <table
+            class="wow fadeInUp section5-title section5-table"
+            style="visibility: visible; animation-name: fadeInUp;"
+          >
+            <tbody>
+              <tr>
+                <td class="sun">S</td>
+                <td>M</td>
+                <td>T</td>
+                <td>W</td>
+                <td>T</td>
+                <td>F</td>
+                <td>S</td>
+              </tr>
+              <tr>
+                <td class="sun">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td class="sun">8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td class="sun">15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <td class="sun">22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td class="check">28</td>
+              </tr>
+              <tr>
+                <td class="sun">29</td>
+                <td>30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <p
+            class="wow fadeInUp section5-title section5-sub"
+            style="margin-top: 1.3em; visibility: visible; animation-name: fadeInUp;"
+          >
+            민철 ❤️ 소라 결혼식이 <span id="d-day">0</span>일 남았습니다.
+          </p>
+          <br /><br />
         </div>
         <hr class="cover-container" />
         <br />
@@ -382,7 +454,7 @@
                 </ul>
               </div>
             </div>
-            <div class="galList hiddenList">
+            <div class="galList hiddenList" style="display: none;">
               <div class="col">
                 <ul>
                   <li
@@ -965,6 +1037,10 @@
               </div>
             </div>
           </div>
+          <div class="gallery-more-button">
+            <div></div>
+            <span>사진 더 보기</span>
+          </div>
           <!-- 수정중 종료-->
           <br /><br /><br />
         </div>
@@ -1053,7 +1129,7 @@
               </div>
             </div>
             <br />
-            <div class="row" style="margin-top: 1rem; margin-bottom: 1rem;">
+            <!-- <div class="row" style="margin-top: 1rem; margin-bottom: 1rem;">
               <div class="col-6 section4-sec1-2">
                 <span class="section4-sec1">신랑측 혼주</span>
               </div>
@@ -1076,7 +1152,7 @@
                 <br />
                 <span class="section4-sec1">어머니</span>&nbsp;&nbsp;&nbsp;<span class="section4-sec2">황인자</span>
               </div>
-            </div>
+            </div> -->
           </div>
           <br /><br />
         </div>
@@ -1159,83 +1235,6 @@
           </div>
         </div>
         <br /><br />
-
-        <div
-          class="wow fadeInUp section5 inner cover-container d-flex w-100 p-3 mx-auto flex-column"
-          style="visibility: visible; animation-name: fadeInUp;"
-        >
-          <br />
-          <p class="section5-title section5-main">Date</p>
-          <p class="section5-title section5-sub" style="margin-top: 0;">04월29일 · 토요일 · 오후 03:20</p>
-          <table
-            class="wow fadeInUp section5-title section5-table"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <tbody>
-              <tr>
-                <td class="sun">S</td>
-                <td>M</td>
-                <td>T</td>
-                <td>W</td>
-                <td>T</td>
-                <td>F</td>
-                <td>S</td>
-              </tr>
-              <tr>
-                <td class="sun">1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-              </tr>
-              <tr>
-                <td class="sun">8</td>
-                <td>9</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-              </tr>
-              <tr>
-                <td class="sun">15</td>
-                <td>16</td>
-                <td>17</td>
-                <td>18</td>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-              </tr>
-              <tr>
-                <td class="sun">22</td>
-                <td>23</td>
-                <td>24</td>
-                <td>25</td>
-                <td>26</td>
-                <td>27</td>
-                <td class="check">28</td>
-              </tr>
-              <tr>
-                <td class="sun">29</td>
-                <td>30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-          <p
-            class="wow fadeInUp section5-title section5-sub"
-            style="margin-top: 1.3em; visibility: visible; animation-name: fadeInUp;"
-          >
-            민철 ❤️ 소라 결혼식이 <span id="d-day">0</span>일 남았습니다.
-          </p>
-          <br /><br />
-        </div>
         <div
           class="wow fadeInUp inner cover-container d-flex w-100 mx-auto flex-column"
           style="visibility: visible; animation-name: fadeInUp;"
@@ -2047,7 +2046,7 @@
               </div>
             </div>
           </div>
-          <div class="Slide-Conatainer section6-location p-3">
+          <div class="Slide-Conatainer section6-location p-3" style="display: none;">
             <div class="List-slide">
               <ul class="slick-initialized slick-slider">
                 <div class="slick-list draggable">

@@ -8,8 +8,20 @@ $(function () {
     sendKakao();
   });
 
-  $(".closeSlide").on("click", function (e) {
-    $(".Slide-Conatainer").css("display", "none");
+  $(".kakao-link-btn").on("click", function (e) {
+    sendKakao();
+  });
+
+  $(".gallery-more-button").on("click", function (e) {
+    if ($(".hiddenList").hasClass("active")) {
+      $(".hiddenList").hide();
+      $(".hiddenList").removeClass("active");
+      $(".gallery-more-button >span").text("사진 닫기");
+    } else {
+      $(".hiddenList").show();
+      $(".hiddenList").addClass("active");
+      $(".gallery-more-button >span").text("사진 더 보기");
+    }
   });
 
   var sendKakao = function () {
