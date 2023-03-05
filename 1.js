@@ -1,4 +1,17 @@
 $(function () {
+  var copy = document.getElementsByClassName("money-man");
+
+  // 위에서 가져온 list들을 Clipboard 객체를 생성할 때 넘겨줌
+  var clipboard = new ClipboardJS(".money-man-copy");
+  var clipboard1 = new ClipboardJS(".money-girl-copy");
+  // 클립보드에 복사가 완료되었을 때 실행할 이벤트 함수
+  // 성공시
+  clipboard.on("success", function (e) {});
+  // 실패시
+  clipboard1.on("error", function (e) {});
+  clipboard1.on("success", function (e) {});
+  // 실패시
+  clipboard.on("error", function (e) {});
   console.log("  console.log(Kakao.isInitialized())", Kakao.isInitialized());
   if (!Kakao.isInitialized()) {
     Kakao.init("39664a8c58eabe14e10d98f360b0f5b5");

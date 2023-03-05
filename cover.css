@@ -260,7 +260,7 @@ header {
 .section4-sec1 {
   font-family: "Gowun Dodum", sans-serif;
   line-height: 1.5em;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .section4-sec2 {
@@ -579,7 +579,7 @@ em > span {
   font-weight: bold;
 }
 .header-img > img {
-  width: 230px;
+  width: 240px;
 }
 .gallery-more-button {
   display: inline-block;
@@ -693,4 +693,19 @@ svg {
 }
 .card-header {
   padding: 0rem 0rem !important;
+}
+.btn-copy {
+  position: absolute;
+  top: calc(0.75rem rem - 1px);
+  right: 0.75rem;
+  width: 54px;
+  cursor: pointer;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid #e1e1e1;
+  color: #333;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 24px;
 }
