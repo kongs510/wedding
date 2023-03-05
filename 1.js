@@ -6,10 +6,14 @@ $(function () {
   var clipboard1 = new ClipboardJS(".money-girl-copy");
   // 클립보드에 복사가 완료되었을 때 실행할 이벤트 함수
   // 성공시
-  clipboard.on("success", function (e) {});
+  clipboard.on("success", function (e) {
+    alert("계좌번호 복사");
+  });
   // 실패시
   clipboard1.on("error", function (e) {});
-  clipboard1.on("success", function (e) {});
+  clipboard1.on("success", function (e) {
+    alert("계좌번호 복사");
+  });
   // 실패시
   clipboard.on("error", function (e) {});
   console.log("  console.log(Kakao.isInitialized())", Kakao.isInitialized());
