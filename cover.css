@@ -21,13 +21,14 @@ a:hover {
 
 .top-title {
   margin-top: 1em;
-  margin-bottom: 1em;
-  /* color: #333; */
-  color: #ffffff;
+  /* margin-bottom: 1em; */
+  color: #333;
+  /* color: #ffffff; */
   text-shadow: none;
   font-family: "Gowun Batang", serif;
   /* font-size: 1.7rem; */
   font-size: 17px !important;
+  font-weight: 600;
 }
 
 .top-title-sub {
@@ -239,7 +240,7 @@ header {
   line-height: 1.5em;
   font-size: 2rem;
   margin-top: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .section3-image {
@@ -339,7 +340,7 @@ header {
 }
 
 .section6-title {
-  margin-top: 1em;
+  margin-top: 1.5em;
   color: #333;
   text-shadow: none;
 }
@@ -565,12 +566,12 @@ tbody > tr > td {
 .header-container {
   position: relative;
   z-index: 10;
-  padding-top: 35px;
+  padding-top: 3.2rem;
   text-align: center;
 }
 .header-text > span,
 em > span {
-  font-size: 23px;
+  font-size: 25px;
   line-height: 23px;
   color: #9d7e5f;
   letter-spacing: -1px;
@@ -578,7 +579,7 @@ em > span {
   font-weight: bold;
 }
 .header-img > img {
-  width: 200px;
+  width: 230px;
 }
 .gallery-more-button {
   display: inline-block;
