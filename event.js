@@ -1,4 +1,6 @@
 $(function () {
+  $("video")[0].play();
+
   // 위에서 가져온 list들을 Clipboard 객체를 생성할 때 넘겨줌
   var clipboard = new ClipboardJS(".money-man-copy");
   var clipboard1 = new ClipboardJS(".money-girl-copy");
