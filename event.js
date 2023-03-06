@@ -1,21 +1,34 @@
 $(function () {
-  var copy = document.getElementsByClassName("money-man");
-
   // 위에서 가져온 list들을 Clipboard 객체를 생성할 때 넘겨줌
   var clipboard = new ClipboardJS(".money-man-copy");
   var clipboard1 = new ClipboardJS(".money-girl-copy");
+  var clipboard2 = new ClipboardJS(".money-mDad-copy");
+  var clipboard3 = new ClipboardJS(".money-mMom-copy");
+  var clipboard4 = new ClipboardJS(".money-gMon-copy");
   // 클립보드에 복사가 완료되었을 때 실행할 이벤트 함수
   // 성공시
   clipboard.on("success", function (e) {
     alert("계좌번호 복사");
   });
   // 실패시
-  clipboard1.on("error", function (e) {});
+  // clipboard.on("error", function (e) {});
+
   clipboard1.on("success", function (e) {
     alert("계좌번호 복사");
   });
-  // 실패시
-  clipboard.on("error", function (e) {});
+
+  clipboard2.on("success", function (e) {
+    alert("계좌번호 복사");
+  });
+
+  clipboard3.on("success", function (e) {
+    alert("계좌번호 복사");
+  });
+
+  clipboard4.on("success", function (e) {
+    alert("계좌번호 복사");
+  });
+
   console.log("  console.log(Kakao.isInitialized())", Kakao.isInitialized());
   if (!Kakao.isInitialized()) {
     Kakao.init("39664a8c58eabe14e10d98f360b0f5b5");
