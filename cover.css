@@ -385,7 +385,7 @@ header {
 }
 
 .section7-title {
-  margin-top: 1em;
+  /* margin-top: 1em; */
   color: #333;
   text-shadow: none;
 }
@@ -405,7 +405,7 @@ header {
 .section7-main {
   font-family: "Gowun Batang", serif;
   line-height: 1.4em;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .section7-button {
