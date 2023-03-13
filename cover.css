@@ -573,7 +573,8 @@ tbody > tr > td {
 em > span {
   font-size: 25px;
   line-height: 23px;
-  color: #9d7e5f;
+  /* color: #9d7e5f; */
+  color: #5f3714;
   letter-spacing: -1px;
   margin-bottom: 15px;
   font-weight: bold;
