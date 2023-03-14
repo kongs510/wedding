@@ -33,7 +33,7 @@ $(function () {
 
   console.log("  console.log(Kakao.isInitialized())", Kakao.isInitialized());
   if (!Kakao.isInitialized()) {
-    Kakao.init("39664a8c58eabe14e10d98f360b0f5b5");
+    Kakao.init("73b7410fc804e7eef040d106424bf6d3");
   }
 
   $(".kakao-link-btn").on("click", function (e) {
