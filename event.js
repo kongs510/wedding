@@ -1,6 +1,6 @@
 $(function () {
   $("video")[0].play();
-  ajaxCall();
+
 
   // 위에서 가져온 list들을 Clipboard 객체를 생성할 때 넘겨줌
   var clipboard = new ClipboardJS(".money-man-copy");
@@ -78,6 +78,18 @@ $(function () {
     }
   });
 
+  $(".book_open").on("click", function (e) {
+    $(".pop_front").css("display", "flex");  
+    $(".black_back").css("display", "flex");  
+    [0].src ="http://146.56.113.242:8080/";
+  });
+
+  $(".write_open").on("click", function (e) {
+    $(".pop_front").css("display", "flex"); 
+    $(".black_back").css("display", "flex");  
+    $("iframe")[0].src ="http://146.56.113.242:8080/index2.html";
+  });
+
   var sendKakao = function () {
     // head에서 정보 가져오기(JQuery)
     var thumbImg = $('meta[property="og:image"]').attr("content"); //og이미지 주소
@@ -117,19 +129,3 @@ $(function () {
 
 });
 
-var ajaxCall = function() {
-  
-  $.ajax({
-    type: "GET"
-    ,url: "//146.56.113.242:8080/user",
-    dataType:"json"
-    // ,data:obj
-    ,success : function(data) {
-      console.log(data);
-    }
-    ,error : function(error) {
-          console.log("json error",error);
-    }
-}); 	
-  
-}

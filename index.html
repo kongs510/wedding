@@ -33,9 +33,22 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./event.js"></script>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -2466,8 +2479,8 @@
           <br /><br />
         </footer>
       </main>
-      <div class="write_black black_back" style="display: block;"></div>
-      <div class="write_wrap pop_front" style="display: block;">
+      <div class="write_black black_back" style="display: none;"></div>
+      <div class="write_wrap pop_front" style="display: none;">
         <svg
           class="write_close"
           stroke="currentColor"
@@ -2486,223 +2499,17 @@
             d="M368 368L144 144m224 0L144 368"
           ></path>
         </svg>
-        <div class="modal-box" style="min-height: 500px; padding-left: 16px; padding-right: 16px;">
-          <div style="padding-top: 15px;">
-            <p style="font-size: 17px; color: rgb(51, 51, 51); font-weight: bold;">방명록 전체보기</p>
-          </div>
-          <div style="text-align: left; margin-top: 40px;">
-            <div>
-              <div>
-                <div class="custom_background" style="padding: 15px 20px; border-radius: 10px; margin-top: 18px;">
-                  <div
-                    style="
-                      font-size: 13px;
-                      border-bottom: 1px solid rgb(207, 207, 207);
-                      padding-bottom: 12px;
-                      position: relative;
-                    "
-                  >
-                    <div><span>from.</span><span style="color: rgb(68, 68, 68);">김설아</span></div>
-                    <div
-                      style="
-                        position: absolute;
-                        top: -5px;
-                        right: -8px;
-                        background-color: rgb(255, 255, 255);
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 3px;
-                        cursor: pointer;
-                      "
-                    >
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        height="16"
-                        width="16"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="32"
-                          d="M368 368L144 144m224 0L144 368"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div style="padding-top: 12px;">
-                    <div style="font-size: 14px; color: rgb(144, 112, 74); line-height: 20px;">
-                      선배님 결혼 진심으로 축하드려요~🎉 예쁘게 오순도순 행복한 가정 잘 꾸려가시길 응원할게요! 😆 꽃
-                      길만 걸으세요 🌸
-                    </div>
-                    <div style="text-align: right; font-size: 11px; color: rgb(102, 102, 102); margin-top: 14px;">
-                      2023-3-13 23:57
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="custom_background" style="padding: 15px 20px; border-radius: 10px; margin-top: 18px;">
-                  <div
-                    style="
-                      font-size: 13px;
-                      border-bottom: 1px solid rgb(207, 207, 207);
-                      padding-bottom: 12px;
-                      position: relative;
-                    "
-                  >
-                    <div><span>from.</span><span style="color: rgb(68, 68, 68);">류정재</span></div>
-                    <div
-                      style="
-                        position: absolute;
-                        top: -5px;
-                        right: -8px;
-                        background-color: rgb(255, 255, 255);
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 3px;
-                        cursor: pointer;
-                      "
-                    >
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        height="16"
-                        width="16"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="32"
-                          d="M368 368L144 144m224 0L144 368"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div style="padding-top: 12px;">
-                    <div style="font-size: 14px; color: rgb(144, 112, 74); line-height: 20px;">
-                      결혼이란 하늘에서 맺어지고 땅에서 완성된다고 했어요 ☁️ 두 사람이라는 원석이 만나 보석 같은
-                      인생으로 함께 만들어가시길 진심으로 바랍니다 💫
-                    </div>
-                    <div style="text-align: right; font-size: 11px; color: rgb(102, 102, 102); margin-top: 14px;">
-                      2023-3-13 23:56
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="custom_background" style="padding: 15px 20px; border-radius: 10px; margin-top: 18px;">
-                  <div
-                    style="
-                      font-size: 13px;
-                      border-bottom: 1px solid rgb(207, 207, 207);
-                      padding-bottom: 12px;
-                      position: relative;
-                    "
-                  >
-                    <div><span>from.</span><span style="color: rgb(68, 68, 68);">하지현</span></div>
-                    <div
-                      style="
-                        position: absolute;
-                        top: -5px;
-                        right: -8px;
-                        background-color: rgb(255, 255, 255);
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 3px;
-                        cursor: pointer;
-                      "
-                    >
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        height="16"
-                        width="16"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="32"
-                          d="M368 368L144 144m224 0L144 368"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div style="padding-top: 12px;">
-                    <div style="font-size: 14px; color: rgb(144, 112, 74); line-height: 20px;">
-                      바쁘게 결혼 준비하면서도 행복해하는 모습을 보니까 정말 나도 기쁘다! 💜 인생에서 가장 큰 기쁨과
-                      축복이 함께하길 바랄게 🙏
-                    </div>
-                    <div style="text-align: right; font-size: 11px; color: rgb(102, 102, 102); margin-top: 14px;">
-                      2023-3-13 23:56
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="write_wrap pop_front" style="display: block;">
-        <svg
-          class="write_close"
-          stroke="currentColor"
-          fill="currentColor"
-          stroke-width="0"
-          viewBox="0 0 512 512"
-          height="30"
-          width="30"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="32"
-            d="M368 368L144 144m224 0L144 368"
-          ></path>
-        </svg>
-        <p class="write_tit">방명록 작성하기</p>
-        <span class="write_sub">방명록을 작성해주세요!</span>
-        <input type="text" name="" value="" placeholder="성함을 입력해주세요." id="write_name" />
-        <textarea
-          id="write_txt"
-          rows="4"
-          placeholder="내용을 입력해주세요 (비방, 욕설, 정치적성향의 글은 임의로 삭제되며 형사처벌의 대상이 될 수 있습니다.)"
-          style="resize: none;"
-        ></textarea>
-        <span class="write_btn">작성하기</span>
-      </div> -->
+
+        <iframe
+          class="modal-box"
+          scrolling="no"
+          style="min-height: 500px; padding-left: 16px; padding-right: 16px;"
+        />
     </div>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
 
-    <script src="./event.js"></script>
+
+
 
     <div id="__endic_crx__"><div class="css-diqpy0"></div></div>
   </body>
