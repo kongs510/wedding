@@ -121,7 +121,7 @@ var ajaxCall = function() {
   
   $.ajax({
     type: "GET"
-    ,url: "http://146.56.113.242:8080/user",
+    ,url: "//146.56.113.242:8080/user",
     dataType:"json"
     // ,data:obj
     ,success : function(data) {
