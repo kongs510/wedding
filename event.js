@@ -118,20 +118,17 @@ $(function () {
 });
 
 var ajaxCall = function() {
-  var url = "http://146.56.113.242:8080/user";
+  
   $.ajax({
     type: "GET"
-    ,url: url
-    ,dataType: "json"
-    ,beforeSend: function (request) {
-      request.withCredentials = false;
-  }
+    ,url: "http://146.56.113.242:8080/user",
+    dataType:"json"
     // ,data:obj
     ,success : function(data) {
       console.log(data);
     }
-    ,error : function(data) {
-          console.log("json error",data);
+    ,error : function(error) {
+          console.log("json error",error);
     }
 }); 	
   
