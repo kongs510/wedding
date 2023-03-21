@@ -1,6 +1,6 @@
 $(function () {
   $("video")[0].play();
-  ajaxCall();
+  // ajaxCall();
 
   // 위에서 가져온 list들을 Clipboard 객체를 생성할 때 넘겨줌
   var clipboard = new ClipboardJS(".money-man-copy");
