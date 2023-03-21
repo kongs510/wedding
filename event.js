@@ -81,14 +81,22 @@ $(function () {
   $(".book_open").on("click", function (e) {
     $(".pop_front").css("display", "flex");  
     $(".black_back").css("display", "flex");  
-    [0].src ="http://146.56.113.242:8080/";
+    $(".ifr1").css("display", "flex");  
+
   });
 
   $(".write_open").on("click", function (e) {
     $(".pop_front").css("display", "flex"); 
     $(".black_back").css("display", "flex");  
-    $("iframe")[0].src ="http://146.56.113.242:8080/index2.html";
+    $(".ifr2").css("display", "flex");  
   });
+  $(".write_close").on("click", function (e) {
+    $(".pop_front").css("display", "none"); 
+    $(".black_back").css("display", "none");  
+    $(".ifr1").css("display", "none");  
+    $(".ifr2").css("display", "none"); 
+  });
+  
 
   var sendKakao = function () {
     // head에서 정보 가져오기(JQuery)
