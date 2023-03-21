@@ -120,9 +120,12 @@ $(function () {
 var ajaxCall = function() {
   var url = "http://146.56.113.242:8080/user";
   $.ajax({
-    type: "get"
+    type: "GET"
     ,url: url
     ,dataType: "json"
+    ,beforeSend: function (request) {
+      request.withCredentials = false;
+  }
     // ,data:obj
     ,success : function(data) {
       console.log(data);
