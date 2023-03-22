@@ -84,7 +84,7 @@ $(function () {
   });
 
   $(".write_open").on("click", function (e) {
-    window.open("http://146.56.113.242:8080/index2.html", "PopupWin", "toolbar=no,scrollbars=no,resizable=yes,width=340,height=500");
+    window.open("http://146.56.113.242:8080/index2.html", "PopupWin", "toolbar=no,scrollbars=no,resizable=yes,width=340,height=350");
   });
   $(".write_close").on("click", function (e) {
     $(".pop_front").css("display", "none"); 
